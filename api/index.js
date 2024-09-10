@@ -17,7 +17,7 @@ app.use('/api/forms' , formRoutes)
 
 // connect to db
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect("mongodb+srv://javeriaameer793:fE8VEIYJivaVJcJj@cluster0.o01d9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 .then(() => {
  // listen for request
 const port = process.env.PORT || 4000;
