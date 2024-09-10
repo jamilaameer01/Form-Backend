@@ -1,4 +1,4 @@
-require('dotenv').config();
+
 
 const express = require('express')
 const mongoose = require('mongoose')
@@ -20,7 +20,7 @@ app.use('/api/forms' , formRoutes)
 mongoose.connect("mongodb+srv://javeriaameer793:fE8VEIYJivaVJcJj@cluster0.o01d9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 .then(() => {
  // listen for request
-const port = process.env.PORT || 4000;
+const port = 4000;
 app.listen(port, () => {
   console.log(`Server running on port & connecting to db  ${port}`);
 });
