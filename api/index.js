@@ -14,6 +14,9 @@ app.use((req, res, next) => {
 })
 // routes
 app.use('/api/forms' , formRoutes)
+app.get("/", (req,res)=>{
+  res.send("Hello Pakistan")
+})
 
 // connect to db
 
